@@ -1,9 +1,10 @@
 module.exports = {
-  name: "embed",
+  name: "edit",
   async execute(client, Discord, message, functions, args, set) {
     message.delete().catch(_ => {});
+
     const adminRoles = set[client.user.username].adminRoles;
-    if (message.channel.type == "dm" || 
+    if (
       message.member.roles.cache.some(r => adminRoles.includes(r.id)) ||
       message.member.hasPermission("ADMINISTRATOR")
     ) {
@@ -11,9 +12,15 @@ module.exports = {
       const sheet = data.doc.sheetsByTitle["Embeds"];
       const rows = await sheet.getRows();
 
-      let embed = rows.filter(embed => embed.name == args.join(" "));
+      let embed = rows.filter(row => row.name == args[2]);
       const finalEmbed = functions.EmbedBuilder(embed);
-      message.channel.send(finalEmbed);
-    }
-  }
-};
+
+      client.channels.cache
+        .get(args[0])
+        .messages.fetch(args[1])
+        .then(msg => msg.edit(finalEmbed))
+        .catch(console.error);
+      console.log("Updating Embed");
+    }}}
+    
+    
