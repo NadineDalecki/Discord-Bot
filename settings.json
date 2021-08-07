@@ -9,7 +9,6 @@
             "855095019568627765"
         ],
         "logChannel": "718176504437276682",
-        "deletedMessages": false,
         "status": "dnd",
         "activity": {
             "name": "shit talking",
@@ -17,14 +16,13 @@
             "url": "https://discord.com"
         },
         "JoinDM": true,
-        "JoinDMText": "**Welcome to Echo Arena EU Teams! **The place to make a team, play other teams and generally advance the EU Echo Arena scene with the ultimate goal of defeating NA teams in tournaments. This is a *closed-off private space from NA players*, so don’t mention this server or talk about its contents. Keep discussions civil, don’t overly post memes or general pointless chatter. **Be respectful**, but as this is a competitive server some drama/salt/banter is expected between teams and players.\n\n**MIXED SCRIMS**\n\nMixed scrims are fun games with random players, kind of like public matches but with the same group playing each other in a private match. A mixed scrim group will keep playing for as long as they feel like it (often 1-2 hours), with players dropping out and new players joining in.\n\n**Don’t join a mixed scrim unless you can play for at least 30 minutes, don’t ask for a mixed scrim unless you can play for about an hour.**\n\nOther than that, it’s first come first served. If you want to be alerted of these mixed scrims, join the @Scrimmer role by typing: `Affen scrimmer`\n\u200b\n**TEAM SCRIMS**\n\nTeam scrims are “practice dates” where two existing teams can train against each other, usually for a duration of 1-2 hours. If you are in a team you can tag the @Teams role and ask for a specific day or time, for example: @Teams scrims 7-9 SUK (UK Time)? If  you want to play, answer and set it up in the chat. Avoid private messaging responses if possible so others know that the spot is taken.\n\n**Don’t ask for a team scrim unless you have made sure your team can actually accept it and play for at least an hour.**\n\n**Looking for teams role**: If you are looking for teams to join, assign yourself the @looking for team role by typing: `Affen looking for team`",
+        "JoinDMText": "**Welcome to Echo Arena EU Teams! This is a *closed-off private space from NA players*, so don’t mention this server or talk about its contents. READ THE WELCOME CHANNEL! **Be respectful**, but as this is a competitive server some drama/salt/banter is expected between teams and players.\n\n**MIXED SCRIMS**\n\nMixed scrims are fun games with random players, kind of like public matches but with the same group playing each other in a private match. A mixed scrim group will keep playing for as long as they feel like it (often 1-2 hours), with players dropping out and new players joining in.\n\n**Don’t join a mixed scrim unless you can play for at least 30 minutes, don’t ask for a mixed scrim unless you can play for about an hour. For more info about scrims and how we organize them check #scrim-info",
         "roles": {
             "lft": "549925842646597651",
             "Scrimmer": "509787093208399872",
             "Climbey": "428612225134231552",
             "1v1": "869856554126565377"
-        },
-        "muteRole": "444875478390800406"
+        }
     },
     "Bane": {
         "spreadsheetID": "1EUd3czTty60S7WhFn9Y5leOtH0lOu2LhLEvkQ62eE50",
@@ -36,26 +34,22 @@
             "425225020382642176"
         ],
         "logChannel": "718176504437276682",
-        "deletedMessages": false,
         "status": "idle",
         "activity": {
             "name": "POPULATION:ONE",
             "type": "COMPETING",
             "url": "https://discord.com"
-        },
-        "muteRole": ""
+        }
     },
     "Itsy": {
         "spreadsheetID": "1WwEw74tAaqXjza58SDB2E42aWOLuehxYvJ-8eBrSv6U",
         "guildId": "610545116494430234",
-        "prefix": "=",
+        "prefix": "?",
         "adminRoles": [
             "677015339120328704",
             "425225020382642176"
         ],
-        "df": "./dialogflow/itsy.js",
         "logChannel": "744152267912904735",
-        "deletedMessages": false,
         "status": "online",
         "activity": {
             "name": "to your ideas 💡",
@@ -65,20 +59,18 @@
     },
     "KVN": {
         "guildId": "707307751033798666",
-        "prefix": "!",
+        "prefix": "?",
         "adminRoles": [
             "724966816056606780",
             "763833830233866291"
         ],
         "logChannel": "718176504437276682",
-        "deletedMessages": false,
         "status": "online",
         "activity": {
             "name": "the alpha testers",
             "type": "WATCHING",
             "url": "https://www.twitch.tv/"
-        },
-        "muteRole": ""
+        }
     },
     "Mel": {
         "spreadsheetID": "1b-2t41LO_U5j8gJfxPS_rdg4Y8kINwMgSqUKpNdf4RE",
@@ -90,7 +82,6 @@
             "425225020382642176"
         ],
         "logChannel": "718176504437276682",
-        "deletedMessages": false,
         "status": "online",
         "activity": {
             "name": "to your questions ❓",
@@ -106,40 +97,35 @@
             "425225020382642176"
         ],
         "logChannel": "718176504437276682",
-        "deletedMessages": false,
         "status": "dnd"
     },
     "Py": {
         "guildId": "861208697274630164",
-        "prefix": "#",
+        "prefix": "?",
         "adminRoles": [
             "861288359702560788",
             "425225020382642176"
         ],
-        "deletedMessages": false,
         "status": "online",
         "activity": {
             "name": "to your questions ❓",
             "type": "LISTENING",
             "url": "https://www.twitch.tv/watchvrsn"
-        },
-        "muteRole": "748631446217818123"
+        }
     },
     "TG Bot": {
         "guildId": "421618914166833152",
-        "prefix": "!",
+        "prefix": "?",
         "adminRoles": [
             "647068080908009472",
             "421641048155226113"
         ],
         "logChannel": "718176504437276682",
-        "deletedMessages": false,
         "status": "online",
         "activity": {
             "name": "in Zero Gravity",
             "type": "COMPETING",
             "url": "https://www.twitch.tv/"
-        },
-        "muteRole": ""
+        }
     }
 }
