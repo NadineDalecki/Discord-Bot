@@ -24,7 +24,7 @@ module.exports = {
                 const data = await functions.SpreadsheetGET(client)
                 const rows = await data.doc.sheetsByTitle["Embeds"].getRows();
                 let embed = rows.filter(row => row.name == answer.intent);
-                const finalEmbed = functions.EmbedBuilder(embed);
+                const finalEmbed = functions.EmbedBuilder(Discord, embed);
                 message.reply(finalEmbed);
             }
             //=========================================================================================================

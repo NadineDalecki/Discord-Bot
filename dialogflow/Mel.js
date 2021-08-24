@@ -5,11 +5,10 @@ module.exports = {
         if (message.channel.type == "dm" ||
             message.mentions.has(client.user.id) ||
             message.cleanContent.startsWith(client.user.username + " ") ||
-            message.cleanContent.startsWith(client.user.username.toLowerCase() + " ")) {
-
+            message.cleanContent.startsWith(client.user.username.toLowerCase() + " ")) {  
+            const userMap = new Map()
             functions.SpamStop(client, message, userMap, set[client.user.username].muteRole)
             const answer = await functions.DialogflowQuery(client, message);
-            const userMap = new Map()
             const data = await functions.SpreadsheetGET(client);
 
             //=========================================================================================================
@@ -21,7 +20,7 @@ module.exports = {
                 if (answer.intent.substring(0, 5) === "embed") {
                     const rows = await data.doc.sheetsByTitle["Embeds"].getRows();
                     let embed = rows.filter(row => row.name == answer.intent);
-                    const finalEmbed = functions.EmbedBuilder(embed);
+                    const finalEmbed = functions.EmbedBuilder(Discord, embed);
                     message.reply(finalEmbed);
                 }
                 //=========================================================================================================

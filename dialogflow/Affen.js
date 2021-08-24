@@ -101,7 +101,6 @@ module.exports = {
             //=========================================================================================================
             else {
                 message.reply(answer.response);
-                functions.Inform(client, Discord, answer, message);
             }
         }
     }

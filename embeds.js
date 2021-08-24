@@ -1,5 +1,5 @@
 module.exports = {
-    Wel_WC: function (Discord, message) {
+    WC_Wel: function (Discord, message) {
         const embed = new Discord.MessageEmbed()
             .setColor("#4A26D7")
             .setAuthor("Welcome to the NEPA Echo Arena World Cup Discord!")
@@ -49,6 +49,37 @@ module.exports = {
                 "ROLES",
                 "Please react with a corresponding emoji to get the desired role assigned and gain **access to the full server.**\n\u200b\n:flag_eu: for <@&725059685417484430>\n<:uscanada:725336757133901924> for <@&725059639397580823>\n<:world:725396078832123958> for <@&725059833107054602>\n\u200b\nIf you are interested in alpha tests assign yourself <@&855424107620466708> with :wave:."
             );
+        return embed
+    },
+    VRPL_Wel: function (Discord, message) {
+        const embed = new Discord.MessageEmbed()
+            .setColor("#4A26D7")
+            .setAuthor("Welcome to the VR Party League Discord!")
+            .setThumbnail("https://cdn.discordapp.com/attachments/717436029682057221/871094275444736010/logoNoText.png")
+            .setDescription(
+                "Please check out our Welcome message and rules carefully!\n\u200b\n"
+            )
+            .addField(
+                "Rules",
+                "1️⃣ **[Discord TOS](https://discord.com/terms)** | Follow the TOS! This also means you have to be 13 years or older!\n2️⃣ **No Hate Speech** | Hate speech, racism or harassment in this server will get you banned.\n3️⃣ **No Swearing** | Cursing has never been needed to describe something in a positive manner so please refrain it.\n4️⃣ **Keep The Server Tidy** | Keep all discussions and topics within the designated channels.\n5️⃣ **No Spam** | Keep content, including videos or pictures relevant to the discussion & channel.\n6️⃣ **No NSFW Content** | Do not post any content that is or might be NSFW\n7️⃣ **Respect Others** | Discussions pertaining to gender, sexuality, religion, politics or race quickly turn into heated debates so please avoid such discussions here.\n8️⃣ **Personal Information** | Please be cautious about sharing personal information!\n9️⃣ **Self Promoting or Advertising** | You may not advertise unless related to VRPL or our games or if you’re explicitly given permission by a staff member."
+            )
+            .addField(
+                "\n\u200B\n",
+                "*We reserve the right to mute, kick or ban if you spam, harass, impersonate others or post malicious content of any kind. Mods have final say and try hard to make this a pleasant community for everyone. Please respect mod requests and punishments.*\n\u200b\n"
+            )
+            .addField(
+                "Support & Suggestions",
+                "Got any questions? Please check our <#843963672630919170> first. If you still need help ask in the channels specific to your game/tournament or open a ticket with the 📩 below (general support) or in the info channel of the tournament you are participating in.\n\u200B\n"
+            )
+            .addField(
+                "WANTED: Volunteers",
+                "Keen to 🎉 with our team and players? We are always looking for enthousiastic helpers in various positions like <@&828679289045647382>, <@&828679289045647382>, <@&828679289045647382>, <@&828679289045647382>, <@&828679289045647382>, <@&828679289045647382> and other positions. Simply open a ticket below and tell us about yourself!\n\u200B\n"
+            )
+            .addField(
+                "Roles",
+                "Click on one of the emojis under this message to assign yourself a region role\n\n⬅️ | NA West\n🟢 | NE Central\n➡️ | NA east\n🇪🇺 | Europe\n🥢 | Asia\n🌊 | Oceania ",
+                false
+            )
         return embed
     },
     Wel_EU: function (Discord, message) {

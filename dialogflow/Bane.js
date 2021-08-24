@@ -19,7 +19,7 @@ module.exports = {
             else if (answer.intent.substring(0, 5) === "embed") {
                 const rows = await data.doc.sheetsByTitle["Embeds"].getRows();
                 let embed = rows.filter(row => row.name == answer.intent);
-                const finalEmbed = functions.EmbedBuilder(embed);
+                const finalEmbed = functions.EmbedBuilder(Discord, Discord, embed);
                 message.reply(finalEmbed);
             }
             //=========================================================================================================
@@ -66,7 +66,7 @@ module.exports = {
                                 answer.result[0].queryResult.parameters.fields.locations
                                     .stringValue
                         );
-                        const finalEmbed = functions.EmbedBuilder(embed);
+                        const finalEmbed = functions.EmbedBuilder(Discord, embed);
                         message.reply(finalEmbed);
                     }
                 }
@@ -84,7 +84,7 @@ module.exports = {
                                 row.name ==
                                 answer.result[0].queryResult.parameters.fields.Skins.stringValue
                         );
-                        const finalEmbed = functions.EmbedBuilder(embed);
+                        const finalEmbed = functions.EmbedBuilder(Discord, embed);
                         message.reply(finalEmbed);
                     }
                 }
@@ -104,7 +104,7 @@ module.exports = {
                                 answer.result[0].queryResult.parameters.fields.Weapon
                                     .stringValue
                         );
-                        const finalEmbed = functions.EmbedBuilder(embed);
+                        const finalEmbed = functions.EmbedBuilder(Discord, embed);
                         message.reply(finalEmbed);
                     }
                 }
@@ -156,7 +156,7 @@ module.exports = {
                                 answer.result[0].queryResult.parameters.fields.locations
                                     .stringValue
                         );
-                        const finalEmbed = functions.EmbedBuilder(embed);
+                        const finalEmbed = functions.EmbedBuilder(Discord, embed);
                         client.channels.cache.get(AskBaneChannel).send(`${message.author}`);
                         client.channels.cache.get(AskBaneChannel).send(finalEmbed);
                     }
@@ -175,7 +175,7 @@ module.exports = {
                                 row.name ==
                                 answer.result[0].queryResult.parameters.fields.Skins.stringValue
                         );
-                        const finalEmbed = functions.EmbedBuilder(embed);
+                        const finalEmbed = functions.EmbedBuilder(Discord, embed);
                         client.channels.cache.get(AskBaneChannel).send(`${message.author}`);
                         client.channels.cache.get(AskBaneChannel).send(finalEmbed);
                     }
@@ -196,7 +196,7 @@ module.exports = {
                                 answer.result[0].queryResult.parameters.fields.Weapon
                                     .stringValue
                         );
-                        const finalEmbed = functions.EmbedBuilder(embed);
+                        const finalEmbed = functions.EmbedBuilder(Discord, embed);
                         client.channels.cache.get(AskBaneChannel).send(`${message.author}`);
                         client.channels.cache.get(AskBaneChannel).send(finalEmbed);
                     }

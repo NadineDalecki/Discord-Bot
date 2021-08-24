@@ -1,4 +1,3 @@
-const Discord = require("discord.js")
 const dialogflow = require("@google-cloud/dialogflow")
 const fs = require("fs")
 const { GoogleSpreadsheet } = require("google-spreadsheet")
